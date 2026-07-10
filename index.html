@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Business Card Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="templates.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- LEFT PANEL -->
+
+    <div class="form-panel">
+
+        <h1>Digital Business Card</h1>
+
+        <div class="input-group">
+            <label>Name</label>
+            <input type="text" id="name" placeholder="John Doe">
+        </div>
+
+        <div class="input-group">
+            <label>Designation</label>
+            <input type="text" id="designation" placeholder="Software Engineer">
+        </div>
+
+        <div class="input-group">
+            <label>Company</label>
+            <input type="text" id="company" placeholder="ABC Pvt Ltd">
+        </div>
+
+        <div class="input-group">
+            <label>Email</label>
+            <input type="email" id="email">
+        </div>
+
+        <div class="input-group">
+            <label>Phone</label>
+            <input type="text" id="phone">
+        </div>
+
+        <div class="input-group">
+            <label>Website</label>
+            <input type="text" id="website">
+        </div>
+
+        <div class="input-group">
+            <label>LinkedIn</label>
+            <input type="text" id="linkedin">
+        </div>
+
+        <div class="input-group">
+            <label>GitHub</label>
+            <input type="text" id="github">
+        </div>
+
+        <div class="input-group">
+            <label>Instagram</label>
+            <input type="text" id="instagram">
+        </div>
+
+        <div class="input-group">
+            <label>Twitter / X</label>
+            <input type="text" id="twitter">
+        </div>
+
+        <div class="input-group">
+            <label>Profile Image</label>
+            <input type="file" id="imageUpload" accept="image/*">
+        </div>
+
+        <div class="input-group">
+            <label>Choose Template</label>
+
+            <select id="template">
+                <option value="template1">Blue Modern</option>
+                <option value="template2">Dark Professional</option>
+                <option value="template3">Gradient Neon</option>
+            </select>
+        </div>
+
+        <button id="downloadPNG">
+            Download PNG
+        </button>
+
+        <button id="downloadPDF">
+            Download PDF
+        </button>
+
+    </div>
+
+    <!-- RIGHT PANEL -->
+
+    <div class="preview-panel">
+
+        <div id="businessCard" class="card template1">
+
+            <img
+                id="previewImage"
+                src="https://via.placeholder.com/150"
+                alt=""
+            >
+
+            <h2 id="previewName">
+                John Doe
+            </h2>
+
+            <h4 id="previewDesignation">
+                Software Engineer
+            </h4>
+
+            <p id="previewCompany">
+                ABC Pvt Ltd
+            </p>
+
+            <div class="contact">
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span id="previewEmail">example@email.com</span>
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    <span id="previewPhone">9876543210</span>
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-globe"></i>
+                    <span id="previewWebsite">website.com</span>
+                </p>
+
+            </div>
+
+            <div class="socials">
+
+                <a id="linkedinLink" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a id="githubLink" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a id="instagramLink" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a id="twitterLink" target="_blank">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- html2canvas -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+<!-- jsPDF -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
