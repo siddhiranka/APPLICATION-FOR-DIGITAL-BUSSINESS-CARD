@@ -1,0 +1,74 @@
+/* ===========================
+   TEMPLATE 1 - Modern Blue
+=========================== */
+
+.template1{
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+    color:white;
+}
+
+.template1 .socials a{
+    color:#2196f3;
+}
+
+/* ===========================
+   TEMPLATE 2 - Dark Professional
+=========================== */
+
+.template2{
+    background:#1b1b1b;
+    color:white;
+}
+
+.template2 .socials a{
+    background:#2e2e2e;
+    color:white;
+}
+
+.template2 img{
+    border:5px solid #00d4ff;
+}
+
+.template2 .contact{
+    border-top:1px solid rgba(255,255,255,.2);
+    padding-top:20px;
+}
+
+/* ===========================
+   TEMPLATE 3 - Purple Gradient
+=========================== */
+
+.template3{
+    background:linear-gradient(135deg,#8E2DE2,#4A00E0);
+    color:white;
+}
+
+.template3 img{
+    border:5px solid #ffd700;
+}
+
+.template3 .socials a{
+    color:#8E2DE2;
+}
+
+/* ===========================
+   Smooth Animation
+=========================== */
+
+.card{
+    animation:fadeIn .5s ease;
+}
+
+@keyframes fadeIn{
+
+from{
+    opacity:0;
+    transform:scale(.95);
+}
+
+to{
+    opacity:1;
+    transform:scale(1);
+}
+
+}
